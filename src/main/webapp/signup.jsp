@@ -113,23 +113,39 @@
       </div>
 
       <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" name="email"
+               pattern="^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$"
+               oninvalid="this.setCustomValidity('Enter a valid email address (e.g., user@example.com)')"
+               oninput="this.setCustomValidity('')"
+               required>
+
       </div>
 
       <div class="form-group">
         <label for="password">Create Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" required
+               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$"
+               title="Must be at least 8 characters and include uppercase, lowercase, number, and special character (@#$%^&+=!)">
       </div>
 
       <div class="form-group">
         <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required>
+        <input type="text" id="address" name="address"
+               pattern="^[A-Za-z0-9 ,./#\\-]{5,100}$"
+               oninvalid="this.setCustomValidity('Address must be 5–100 characters and can include letters, numbers, commas, periods, slashes, and hyphens')"
+               oninput="this.setCustomValidity('')"
+               required>
       </div>
 
       <div class="form-group">
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        <input type="tel" id="phone" name="phone"
+               pattern="^[0-9]{10}$"
+               oninvalid="this.setCustomValidity('Phone number must be exactly 10 digits')"
+               oninput="this.setCustomValidity('')"
+               required>
+
       </div>
 
       <div class="form-group">

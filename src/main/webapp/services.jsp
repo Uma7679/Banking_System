@@ -114,7 +114,7 @@
     <div class="service-item">
       <h3>Online Banking</h3>
       <p>Access your accounts 24/7 with our secure and fast online banking services, including fund transfers and bill payments.</p>
-      <a href="/ourServices/onlineBanking.jsp" class="btn">Learn More</a>
+      <a href="/ourServices/onlineBanking.jsp" class="btn">Transfer Money</a>
     </div>
 
     <div class="service-item">

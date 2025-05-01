@@ -17,8 +17,5 @@ public class SignupServlet extends HttpServlet {
         RequestDispatcher rd = req.getRequestDispatcher("/signup.jsp");
 //        rd.include(request, response);
         rd.forward(req, resp);
-
-    }
-    public void destroy() {
     }
 }

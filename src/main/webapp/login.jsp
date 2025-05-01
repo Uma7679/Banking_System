@@ -123,8 +123,8 @@
     <!-- Login form -->
     <form action="/login" method="post">
       <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" name="email" required>
       </div>
 
       <div class="form-group">

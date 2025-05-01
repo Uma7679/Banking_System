@@ -25,9 +25,9 @@ public class TransferServlet extends HttpServlet {
         int amount = Integer.parseInt(req.getParameter("amount"));
         String username = (String) req.getSession().getAttribute("username");
 
-        String jdbcUrl = "jdbc:postgresql://localhost:32768/bank";
+        String jdbcUrl = "jdbc:postgresql://localhost:3268/bank";
         String uname = "postgres";
-        String password = "767985";
+        String password = "Uk767985";
         String driverName = "org.postgresql.Driver";
 
         try{

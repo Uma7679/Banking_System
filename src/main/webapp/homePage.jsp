@@ -171,9 +171,9 @@
 <%--        }--%>
 <%--    %>--%>
     <c:choose>
-        <c:when test="${sessionScope.username != null}">
+        <c:when test="${sessionScope.email != null}">
             <div class="username">
-                <p>Hello...</p> ${sessionScope.username}
+                <p>Hello...</p> ${sessionScope.email}
             </div>
         </c:when>
         <c:otherwise>
@@ -214,7 +214,7 @@
 <%--        }--%>
 <%--    %>--%>
     <c:choose>
-        <c:when test="${sessionScope.username != null}">
+        <c:when test="${sessionScope.email != null}">
             <div class="content">
                 <h1>Welcome Back</h1>
                 <p>Experience secure and reliable banking with ${requestScope.bankName}. Manage your accounts, loans, and more.</p>
